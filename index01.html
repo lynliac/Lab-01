@@ -20,10 +20,11 @@
         <script src="brands.js"></script>
         <script>
 
-            
+            //adding chart through javascript
 var output ="";
 var output = "<table>" + "<tr>" +"<th> Clothing Brand </th>" + "<th> Year Founded </th>" + "<th> Headquarters </th>" + "<th> Net Worth </th>" + "<th> Stock Price </th>" + "<th> Number of Employees </th>" + "</tr>"; 
 for(var x = 0; x < data.length; x++){
+    //assigning variables
        var clothingBrand = data[x].clothingBrand;
        var yearFounded = data[x].yearFounded;
        var headquarters  = data[x].headquarters;
@@ -55,6 +56,8 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: '2018 Car Models',
             data: [data[0].numOfEmployees, data[1].numOfEmployees, data[2].numOfEmployees, data[3].numOfEmployees, data[4].numOfEmployees, data[5].numOfEmployees],
+            
+            //css for chart
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
